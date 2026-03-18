@@ -93,7 +93,7 @@ def main():
     fa = grammar.to_finite_automaton()
 
     print("\nString validation:")
-    test_strings = ["abc", "aac", "abbbc", "cc", "bba", "abac"]
+    test_strings = ["cac", "abcac", "bcabc", "cc", "bba", "cbc"]
 
     for s in test_strings:
         print(f"{s} -> {fa.string_belong_to_language(s)}")
